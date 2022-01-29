@@ -123,31 +123,31 @@ namespace _203765C_Assignment
                 lastchecker.ForeColor = Color.Red;
             }
 
-            if(email_tb.Text.Length == 0)
-            {
-                emailchecker.Text = "Required field";
-                emailchecker.ForeColor= Color.Red;
+            //if(email_tb.Text.Length == 0)
+            //{
+            //    emailchecker.Text = "Required field";
+            //    emailchecker.ForeColor= Color.Red;
 
 
-                SqlConnection conn = new SqlConnection(MYDBConnectionString);
-                string query = "Select * from Register Where Email = '" + email_tb.Text.Trim() + "'";
+            //    SqlConnection conn = new SqlConnection(MYDBConnectionString);
+            //    string query = "Select * from Register Where Email = '" + email_tb.Text.Trim() + "'";
 
-                SqlDataAdapter sda = new SqlDataAdapter(query, conn);
-                DataTable dtbl = new DataTable();
-                sda.Fill(dtbl);
+            //    SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+            //    DataTable dtbl = new DataTable();
+            //    sda.Fill(dtbl);
 
-                if (dtbl.Rows.Count == 1)
-                {
-
-
-                    emailchecker.Text = "Email has been registered";
-                    emailchecker.ForeColor = Color.Red;
+            //    if (dtbl.Rows.Count == 1)
+            //    {
 
 
+            //        emailchecker.Text = "Email has been registered";
+            //        emailchecker.ForeColor = Color.Red;
 
-                }
 
-            }
+
+            //    }
+
+            //}
 
             if (pw_tb.Text.Length == 0)
             {
