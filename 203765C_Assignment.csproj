@@ -76,6 +76,7 @@
     <Content Include="CustomError\HTTP500.html" />
     <Content Include="CustomError\HTTP404.html" />
     <Content Include="ForgetPassword.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Homepage.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Registration.aspx" />
@@ -89,6 +90,9 @@
     </Compile>
     <Compile Include="ForgetPassword.aspx.designer.cs">
       <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
